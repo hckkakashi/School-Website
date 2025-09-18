@@ -1,20 +1,23 @@
-import { Route, Routes } from "react-router-dom";
-
-import IndexPage from "@/pages/index";
-import DocsPage from "@/pages/docs";
-import PricingPage from "@/pages/pricing";
-import BlogPage from "@/pages/blog";
-import AboutPage from "@/pages/about";
+import React from 'react';
+import { Switch, Route } from 'react-router-dom';
+import Layout from './components/layout';
+import HomePage from './pages/home';
+import AboutPage from './pages/about';
+import AdmissionsPage from './pages/admissions';
+import StudentLifePage from './pages/student-life';
+import ContactPage from './pages/contact';
 
 function App() {
   return (
-    <Routes>
-      <Route element={<IndexPage />} path="/" />
-      <Route element={<DocsPage />} path="/docs" />
-      <Route element={<PricingPage />} path="/pricing" />
-      <Route element={<BlogPage />} path="/blog" />
-      <Route element={<AboutPage />} path="/about" />
-    </Routes>
+    <Layout>
+      <Switch>
+        <Route exact path="/" component={HomePage} />
+        <Route path="/about" component={AboutPage} />
+        <Route path="/admissions" component={AdmissionsPage} />
+        <Route path="/student-life" component={StudentLifePage} />
+        <Route path="/contact" component={ContactPage} />
+      </Switch>
+    </Layout>
   );
 }
 
