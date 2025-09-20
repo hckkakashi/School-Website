@@ -656,6 +656,45 @@ const StudentLifePage: React.FC = () => {
           </div>
         </div>
       </section>
+      {/* Gallery */ }
+      <section className="bg-gray-50 py-10">
+      <div className="max-w-6xl mx-auto px-4">
+        {/* Title */}
+        <h2 className="text-2xl font-bold text-center mb-8">Gallery</h2>
+
+        {/* Grid */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+          <div className="overflow-hidden rounded-lg">
+            <img
+              src="src\assets\asdada.jpg"
+              alt="Gallery 1"
+              className="w-full h-40 object-cover hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <div className="overflow-hidden rounded-lg">
+            <img
+              src="src\assets\dsd.jpg"
+              alt="Gallery 2"
+              className="w-full h-40 object-cover hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <div className="overflow-hidden rounded-lg">
+            <img
+              src="src\assets\fsfsf.jpg"
+              alt="Gallery 3"
+              className="w-full h-40 object-cover hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <div className="overflow-hidden rounded-lg">
+            <img
+              src="src\assets\sfsfsfs.jpg"
+              alt="Gallery 4"
+              className="w-full h-40 object-cover hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
     </>
   );
 };

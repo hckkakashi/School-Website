@@ -11,7 +11,11 @@ const Footer: React.FC = () => {
             <div className="col-span-1 md:col-span-4">
               <div className="flex items-center gap-3 mb-6">
                 <div className="bg-white p-1.5 rounded-md">
-                  <Icon icon="lucide:book-open" width={20} height={20} className="text-primary" />
+                  <img
+                    src="src\assets\epeslogo.png"
+                    alt="icon"
+                    className="w-[20px] h-[20px] object-cover"
+                  />
                 </div>
                 <div>
                   <p className="font-bold text-lg serif-font tracking-wide text-white">E.P.E.S</p>

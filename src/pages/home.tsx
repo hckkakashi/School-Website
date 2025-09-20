@@ -6,12 +6,17 @@ import { Icon } from '@iconify/react';
 import HeroSection from '../components/hero-section';
 import SectionTitle from '../components/section-title';
 import FeatureCard from '../components/feature-card';
+import event1 from "../assets/sfsfsfs.jpg";
+import event2 from "../assets/fsfs.jpg";
+import event3 from "../assets/fsfsf.jpg";
+
+const images = [event1, event2, event3];
 
 const HomePage: React.FC = () => {
   const features = [
     {
       icon: "lucide:book",
-      title: "EPES Excellence",
+      title: "Academic Excellence",
       description: "Our curriculum is designed to challenge and inspire students to reach their full potential."
     },
     {
@@ -33,8 +38,7 @@ const HomePage: React.FC = () => {
 
   const stats = [
     { value: "94%", label: "Graduation Rate" },
-    { value: "15:1", label: "Student-Teacher Ratio" },
-    { value: "50+", label: "Extracurricular Activities" },
+    { value: "30+", label: "Extracurricular Activities" },
     { value: "100%", label: "College Acceptance" }
   ];
 
@@ -43,7 +47,7 @@ const HomePage: React.FC = () => {
       <HeroSection
         title="Inspiring Minds, Shaping Futures"
         subtitle="EPES offers a transformative educational experience that prepares students for success in college and beyond."
-        imagePath="https://img.heroui.chat/image/education?w=800&h=600&u=school1"
+        imagePath="src\assets\imgepes.jpg"
       />
 
       {/* Features Section */}
@@ -72,7 +76,7 @@ const HomePage: React.FC = () => {
       {/* Stats Section */}
       <section className="py-16 bg-content2">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
             {stats.map((stat, index) => (
               <motion.div
                 key={index}
@@ -99,42 +103,46 @@ const HomePage: React.FC = () => {
           />
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[1, 2, 3].map((item) => (
-              <Card key={item} className="border border-default-200 shadow-xs">
-                <CardBody className="p-0">
-                  <img 
-                    src={`https://img.heroui.chat/image/education?w=400&h=250&u=event${item}`} 
-                    alt={`Event ${item}`}
-                    className="w-full h-48 object-cover"
-                  />
-                  <div className="p-5">
-                    <div className="flex items-center gap-2 text-default-500 text-xs mb-2">
-                      <Icon icon="lucide:calendar" width={14} />
-                      <span>May {10 + item}, 2024</span>
-                    </div>
-                    <h3 className="text-lg font-medium mb-2">
-                      {item === 1 ? "Annual Science Fair Winners Announced" : 
-                       item === 2 ? "New Arts Center Opening Ceremony" : 
-                       "Summer Sports Camp Registration Open"}
-                    </h3>
-                    <p className="text-default-600 text-sm mb-4">
-                      {item === 1 ? "Congratulations to all participants in this year's Science Fair. The projects showcased incredible innovation and creativity." : 
-                       item === 2 ? "Join us for the grand opening of our state-of-the-art Arts Center, featuring galleries, studios, and performance spaces." : 
-                       "Registration is now open for our popular summer sports camps. Programs available for all age groups and skill levels."}
-                    </p>
-                    <Button 
-                      size="sm" 
-                      variant="light" 
-                      color="primary" 
-                      endContent={<Icon icon="lucide:arrow-right" width={16} />}
-                    >
-                      Read More
-                    </Button>
-                  </div>
-                </CardBody>
-              </Card>
-            ))}
-          </div>
+      {[1, 2, 3].map((item, index) => (
+        <Card key={item} className="border border-default-200 shadow-xs">
+          <CardBody className="p-0">
+            <img
+              src={images[index]}
+              alt={`Event ${item}`}
+              className="w-full h-48 object-cover"
+            />
+            <div className="p-5">
+              <div className="flex items-center gap-2 text-default-500 text-xs mb-2">
+                <Icon icon="lucide:calendar" width={14} />
+                <span>May {10 + item}, 2024</span>
+              </div>
+              <h3 className="text-lg font-medium mb-2">
+                {item === 1
+                  ? "Annual Sports Week"
+                  : item === 2
+                  ? "Science Exebition"
+                  : "EPES Dance Competition"}
+              </h3>
+              <p className="text-default-600 text-sm mb-4">
+                {item === 1
+                  ? "Registration is now open for our popular sports week. Programs available for all age groups and skill levels."
+                  : item === 2
+                  ? "Congratulations to all participants in this year's Science Fair. The projects showcased incredible innovation and creativity."
+                  : "Dance Competition Showcase your talent"}
+              </p>
+              <Button
+                size="sm"
+                variant="light"
+                color="primary"
+                endContent={<Icon icon="lucide:arrow-right" width={16} />}
+              >
+                Read More
+              </Button>
+            </div>
+          </CardBody>
+        </Card>
+      ))}
+    </div>
           
           <div className="text-center mt-10">
             <Button 
@@ -148,8 +156,54 @@ const HomePage: React.FC = () => {
         </div>
       </section>
 
+      <section className="bg-blue-50 py-16">
+  <div className="max-w-7xl mx-auto px-6 lg:px-8">
+    <h2 className="text-4xl font-bold text-center text-black mb-12">What Our Students & Parents Say</h2>
+    <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      
+      {/* <!-- Testimonial 1 --> */}
+      <div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+        <div className="flex items-center mb-4">
+          <img className="w-12 h-12 rounded-full mr-4" src="https://i.pravatar.cc/100?img=4" alt="Student 1"/>
+          <div>
+            <p className="font-semibold text-black">Anjali Sharma</p>
+            <p className="text-black-600 text-sm">Grade 10 Student</p>
+          </div>
+        </div>
+        <p className="text-black-800">"I love how interactive and fun the classNamees are! Teachers always make learning exciting and easy to understand."</p>
+      </div>
+      
+      {/* <!-- Testimonial 2 --> */}
+      <div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+        <div className="flex items-center mb-4">
+          <img className="w-12 h-12 rounded-full mr-4" src="https://i.pravatar.cc/100?img=5" alt="Parent 1"/>
+          <div>
+            <p className="font-semibold text-black">Ramesh Koirala</p>
+            <p className="text-black-600 text-sm">Parent</p>
+          </div>
+        </div>
+        <p className="text-black-800">"The school provides excellent guidance and support for my child. The teachers are caring and attentive."</p>
+      </div>
+      
+      {/* <!-- Testimonial 3 --> */}
+      <div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+        <div className="flex items-center mb-4">
+          <img className="w-12 h-12 rounded-full mr-4" src="https://i.pravatar.cc/100?img=6" alt="Student 2"/>
+          <div>
+            <p className="font-semibold text-black">Sita Gurung</p>
+            <p className="text-black-600 text-sm">Grade 8 Student</p>
+          </div>
+        </div>
+        <p className="text-black-800">"I enjoy participating in school activities and competitions. The environment is so friendly and motivating!"</p>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
       {/* CTA Section */}
-      <section className="py-16 bg-primary-50">
+      <section className="py-16 bg-primary-0">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-semibold mb-4">Ready to Join Our Community?</h2>

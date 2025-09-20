@@ -35,7 +35,11 @@ const Header: React.FC = () => {
         <NavbarBrand>
           <Link to="/" className="flex items-center gap-3">
             <div className="bg-primary p-1.5 rounded-md">
-              <Icon icon="lucide:book-open" width={20} height={20} className="text-white" />
+              <img
+                    src="src\assets\epestlogo.png"
+                    alt="icon"
+                    className="w-[20px] h-[20px] object-cover"
+                  />
             </div>
             <div>
               <p className="font-bold text-lg serif-font tracking-wide">E.P.E.S</p>
