@@ -45,7 +45,7 @@ const ContactPage: React.FC = () => {
     <>
       <HeroSection
         title="Contact Us"
-        subtitle="We'd love to hear from you. Reach out with questions, schedule a visit, or learn more about Academia."
+        subtitle="We'd love to hear from you. Reach out with questions, schedule a visit, or learn more about EPES."
         imagePath="https://img.heroui.chat/image/education?w=800&h=600&u=school5"
       />
 
@@ -61,7 +61,7 @@ const ContactPage: React.FC = () => {
             >
               <h2 className="text-3xl font-semibold mb-6">Get in Touch</h2>
               <p className="text-default-600 mb-8">
-                Have a question or want to learn more about Academia? Fill out the form below and a member of our team will get back to you as soon as possible.
+                Have a question or want to learn more about EPES? Fill out the form below and a member of our team will get back to you as soon as possible.
               </p>
               
               <Card className="border border-default-200 shadow-xs">
@@ -178,7 +178,7 @@ const ContactPage: React.FC = () => {
                     </div>
                     <div>
                       <h3 className="font-medium mb-1">Email</h3>
-                      <p className="text-default-600">info@academia.edu</p>
+                      <p className="text-default-600">info@EPES.edu</p>
                     </div>
                   </div>
                   
@@ -223,7 +223,7 @@ const ContactPage: React.FC = () => {
               {[
                 {
                   question: "How can I schedule a campus tour?",
-                  answer: "You can schedule a campus tour by filling out the contact form above, calling our main office at (123) 456-7890, or emailing info@academia.edu. Tours are available Monday through Friday during school hours and select Saturday mornings."
+                  answer: "You can schedule a campus tour by filling out the contact form above, calling our main office at (123) 456-7890, or emailing info@EPES.edu. Tours are available Monday through Friday during school hours and select Saturday mornings."
                 },
                 {
                   question: "Where can I find information about tuition and financial aid?",
@@ -235,7 +235,7 @@ const ContactPage: React.FC = () => {
                 },
                 {
                   question: "What extracurricular activities are available?",
-                  answer: "Academia offers a wide range of extracurricular activities including sports, arts programs, academic clubs, and community service opportunities. Visit our Student Life page for more information about specific programs."
+                  answer: "EPES offers a wide range of extracurricular activities including sports, arts programs, academic clubs, and community service opportunities. Visit our Student Life page for more information about specific programs."
                 }
               ].map((faq, index) => (
                 <motion.div

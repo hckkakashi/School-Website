@@ -38,8 +38,8 @@ const Header: React.FC = () => {
               <Icon icon="lucide:book-open" width={20} height={20} className="text-white" />
             </div>
             <div>
-              <p className="font-bold text-lg serif-font tracking-wide">Academia</p>
-              <p className="text-[10px] text-default-500 -mt-1 tracking-widest uppercase">Est. 1985</p>
+              <p className="font-bold text-lg serif-font tracking-wide">E.P.E.S</p>
+              <p className="text-[10px] text-default-500 -mt-1 tracking-widest uppercase">Est. 2058 BS</p>
             </div>
           </Link>
         </NavbarBrand>

@@ -14,12 +14,12 @@ const Footer: React.FC = () => {
                   <Icon icon="lucide:book-open" width={20} height={20} className="text-primary" />
                 </div>
                 <div>
-                  <p className="font-bold text-lg serif-font tracking-wide text-white">Academia</p>
-                  <p className="text-[10px] text-primary-200 -mt-1 tracking-widest uppercase">Est. 1985</p>
+                  <p className="font-bold text-lg serif-font tracking-wide text-white">E.P.E.S</p>
+                  <p className="text-[10px] text-primary-200 -mt-1 tracking-widest uppercase">Est. 2058 B.S</p>
                 </div>
               </div>
               <p className="text-primary-100 text-sm mt-2 mb-6">
-                Empowering young minds and shaping futures through quality education since 1985.
+                Empowering young minds and shaping futures through quality education since 2058 B.S.
               </p>
               <div className="flex gap-4 mt-6">
                 <a href="#" className="bg-primary-800 hover:bg-primary-700 p-2 rounded-full transition-colors">
@@ -66,19 +66,19 @@ const Footer: React.FC = () => {
                   <div className="bg-primary-800 p-2 rounded-md mt-0.5">
                     <Icon icon="lucide:map-pin" className="text-primary-100" width={16} />
                   </div>
-                  <span className="text-primary-100 text-sm">123 Education Ave, Learning City, LC 12345</span>
+                  <span className="text-primary-100 text-sm">Su.Na.Pa-03, Boudhadham</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <div className="bg-primary-800 p-2 rounded-md">
                     <Icon icon="lucide:phone" className="text-primary-100" width={16} />
                   </div>
-                  <span className="text-primary-100 text-sm">(123) 456-7890</span>
+                  <span className="text-primary-100 text-sm">+977 9818992887</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <div className="bg-primary-800 p-2 rounded-md">
                     <Icon icon="lucide:mail" className="text-primary-100" width={16} />
                   </div>
-                  <span className="text-primary-100 text-sm">info@academia.edu</span>
+                  <span className="text-primary-100 text-sm">info@epes.edu.np</span>
                 </li>
               </ul>
             </div>
@@ -90,7 +90,7 @@ const Footer: React.FC = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-primary-200 text-sm">
-              © {new Date().getFullYear()} Academia. All rights reserved.
+              © {new Date().getFullYear()} EPES. All rights reserved.
             </p>
             <div className="flex gap-4 mt-3 md:mt-0">
               <a href="#" className="text-primary-300 hover:text-white text-xs transition-colors">Privacy Policy</a>

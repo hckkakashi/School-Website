@@ -109,7 +109,7 @@ const StudentLifePage: React.FC = () => {
     <>
       <HeroSection
         title="Student Life"
-        subtitle="Discover the vibrant community and diverse opportunities that make the Academia experience special beyond academics."
+        subtitle="Discover the vibrant community and diverse opportunities that make the EPES experience special beyond academics."
         imagePath="https://img.heroui.chat/image/education?w=800&h=600&u=school4"
       />
 
@@ -117,8 +117,8 @@ const StudentLifePage: React.FC = () => {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <SectionTitle 
-            title="Life at Academia" 
-            subtitle="At Academia, education extends beyond the classroom. Our students develop as whole individuals through a rich array of extracurricular activities, community service, and special events."
+            title="Life at EPES" 
+            subtitle="At EPES, education extends beyond the classroom. Our students develop as whole individuals through a rich array of extracurricular activities, community service, and special events."
           />
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -492,7 +492,7 @@ const StudentLifePage: React.FC = () => {
             >
               <h3 className="text-xl font-medium mb-4">Making a Difference</h3>
               <p className="text-default-600 mb-6">
-                Community service is an integral part of the Academia experience. Students engage in meaningful service projects that address real community needs while developing empathy, leadership, and civic responsibility.
+                Community service is an integral part of the EPES experience. Students engage in meaningful service projects that address real community needs while developing empathy, leadership, and civic responsibility.
               </p>
               
               <div className="space-y-4 mb-6">

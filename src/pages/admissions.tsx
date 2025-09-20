@@ -41,7 +41,7 @@ const AdmissionsPage: React.FC = () => {
     },
     {
       question: "Do you offer financial aid?",
-      answer: "Yes, Academia is committed to making our education accessible. We offer need-based financial aid to qualifying families. The financial aid application process is separate from admissions."
+      answer: "Yes, EPES is committed to making our education accessible. We offer need-based financial aid to qualifying families. The financial aid application process is separate from admissions."
     },
     {
       question: "Is there a waitlist?",
@@ -61,7 +61,7 @@ const AdmissionsPage: React.FC = () => {
     <>
       <HeroSection
         title="Admissions"
-        subtitle="Join our vibrant learning community. Discover the admissions process, requirements, and everything you need to know about becoming part of Academia."
+        subtitle="Join our vibrant learning community. Discover the admissions process, requirements, and everything you need to know about becoming part of EPES."
         imagePath="https://img.heroui.chat/image/education?w=800&h=600&u=school3"
       />
 
@@ -75,9 +75,9 @@ const AdmissionsPage: React.FC = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
             >
-              <h2 className="text-3xl font-semibold mb-6">Welcome to Academia Admissions</h2>
+              <h2 className="text-3xl font-semibold mb-6">Welcome to EPES Admissions</h2>
               <p className="text-default-600 mb-4">
-                We're delighted that you're considering Academia for your child's education. Our admissions process is designed to be thorough yet supportive, helping us get to know each applicant while giving families the opportunity to learn about our community.
+                We're delighted that you're considering EPES for your child's education. Our admissions process is designed to be thorough yet supportive, helping us get to know each applicant while giving families the opportunity to learn about our community.
               </p>
               <p className="text-default-600 mb-6">
                 We seek students who will thrive in our nurturing academic environment and contribute to our diverse community. Our holistic review considers academic potential, character, interests, and the unique perspective each student brings.
@@ -159,7 +159,7 @@ const AdmissionsPage: React.FC = () => {
         <div className="container mx-auto px-4">
           <SectionTitle 
             title="Admissions Process" 
-            subtitle="Our admissions process is designed to be clear and straightforward. Follow these steps to apply to Academia."
+            subtitle="Our admissions process is designed to be clear and straightforward. Follow these steps to apply to EPES."
             centered
           />
           
@@ -192,7 +192,7 @@ const AdmissionsPage: React.FC = () => {
         <div className="container mx-auto px-4">
           <SectionTitle 
             title="Grade Levels & Programs" 
-            subtitle="Academia offers comprehensive educational programs from kindergarten through middle school."
+            subtitle="EPES offers comprehensive educational programs from kindergarten through middle school."
           />
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -249,7 +249,7 @@ const AdmissionsPage: React.FC = () => {
         <div className="container mx-auto px-4">
           <SectionTitle 
             title="Tuition & Financial Aid" 
-            subtitle="We are committed to making Academia accessible to qualified students from diverse backgrounds."
+            subtitle="We are committed to making EPES accessible to qualified students from diverse backgrounds."
           />
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -263,7 +263,7 @@ const AdmissionsPage: React.FC = () => {
                 <CardBody>
                   <h3 className="text-xl font-medium mb-4">Tuition</h3>
                   <p className="text-default-600 text-sm mb-6">
-                    Tuition at Academia includes comprehensive academic programs, materials, technology resources, and most extracurricular activities. Additional fees may apply for specialized programs, trips, or activities.
+                    Tuition at EPES includes comprehensive academic programs, materials, technology resources, and most extracurricular activities. Additional fees may apply for specialized programs, trips, or activities.
                   </p>
                   
                   <div className="space-y-4">
@@ -294,7 +294,7 @@ const AdmissionsPage: React.FC = () => {
                 <CardBody>
                   <h3 className="text-xl font-medium mb-4">Financial Aid</h3>
                   <p className="text-default-600 text-sm mb-4">
-                    Academia is committed to socioeconomic diversity and offers need-based financial aid to qualifying families. Our financial aid program supports families who demonstrate financial need through a confidential application process.
+                    EPES is committed to socioeconomic diversity and offers need-based financial aid to qualifying families. Our financial aid program supports families who demonstrate financial need through a confidential application process.
                   </p>
                   
                   <h4 className="font-medium mb-2">Financial Aid Process:</h4>
@@ -371,7 +371,7 @@ const AdmissionsPage: React.FC = () => {
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-semibold mb-4">Ready to Apply?</h2>
             <p className="text-default-600 mb-8">
-              Start your journey with Academia today. Our admissions team is here to guide you through every step of the process.
+              Start your journey with EPES today. Our admissions team is here to guide you through every step of the process.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button 

@@ -53,8 +53,8 @@ const AboutPage: React.FC = () => {
   return (
     <>
       <HeroSection
-        title="About Academia"
-        subtitle="Learn about our history, mission, values, and the dedicated team that makes Academia an exceptional place to learn and grow."
+        title="About EPES"
+        subtitle="Learn about our history, mission, values, and the dedicated team that makes EPES an exceptional place to learn and grow."
         imagePath="https://img.heroui.chat/image/education?w=800&h=600&u=school2"
       />
 
@@ -70,7 +70,7 @@ const AboutPage: React.FC = () => {
             >
               <h2 className="text-3xl font-semibold mb-6">Our Mission</h2>
               <p className="text-default-600 mb-4">
-                At Academia, our mission is to provide a transformative educational experience that empowers students to become thoughtful, creative, and engaged citizens who contribute positively to society.
+                At EPES, our mission is to provide a transformative educational experience that empowers students to become thoughtful, creative, and engaged citizens who contribute positively to society.
               </p>
               <p className="text-default-600 mb-4">
                 We believe in nurturing the whole student—intellectually, socially, emotionally, and physically—through a comprehensive curriculum and supportive community.
@@ -93,7 +93,7 @@ const AboutPage: React.FC = () => {
                     <span className="text-primary font-semibold">1985</span>
                   </div>
                   <div>
-                    <p className="text-default-600">Academia was founded with a vision to create a learning environment that balances academic excellence with personal growth.</p>
+                    <p className="text-default-600">EPES was founded with a vision to create a learning environment that balances academic excellence with personal growth.</p>
                   </div>
                 </div>
                 
@@ -120,7 +120,7 @@ const AboutPage: React.FC = () => {
                     <span className="text-primary font-semibold">Today</span>
                   </div>
                   <div>
-                    <p className="text-default-600">Academia continues to evolve while staying true to our founding principles, preparing students for the challenges and opportunities of the 21st century.</p>
+                    <p className="text-default-600">EPES continues to evolve while staying true to our founding principles, preparing students for the challenges and opportunities of the 21st century.</p>
                   </div>
                 </div>
               </div>
@@ -134,7 +134,7 @@ const AboutPage: React.FC = () => {
         <div className="container mx-auto px-4">
           <SectionTitle 
             title="Our Core Values" 
-            subtitle="These principles guide everything we do at Academia, from classroom instruction to community engagement."
+            subtitle="These principles guide everything we do at EPES, from classroom instruction to community engagement."
             centered
           />
           

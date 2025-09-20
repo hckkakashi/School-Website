@@ -11,7 +11,7 @@ const HomePage: React.FC = () => {
   const features = [
     {
       icon: "lucide:book",
-      title: "Academic Excellence",
+      title: "EPES Excellence",
       description: "Our curriculum is designed to challenge and inspire students to reach their full potential."
     },
     {
@@ -42,7 +42,7 @@ const HomePage: React.FC = () => {
     <>
       <HeroSection
         title="Inspiring Minds, Shaping Futures"
-        subtitle="Academia offers a transformative educational experience that prepares students for success in college and beyond."
+        subtitle="EPES offers a transformative educational experience that prepares students for success in college and beyond."
         imagePath="https://img.heroui.chat/image/education?w=800&h=600&u=school1"
       />
 
@@ -50,7 +50,7 @@ const HomePage: React.FC = () => {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <SectionTitle 
-            title="Why Choose Academia" 
+            title="Why Choose EPES" 
             subtitle="We provide a supportive environment where students can discover their passions and develop the skills needed for lifelong success."
             centered
           />
@@ -95,7 +95,7 @@ const HomePage: React.FC = () => {
         <div className="container mx-auto px-4">
           <SectionTitle 
             title="News & Events" 
-            subtitle="Stay updated with the latest happenings at Academia."
+            subtitle="Stay updated with the latest happenings at EPES."
           />
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
