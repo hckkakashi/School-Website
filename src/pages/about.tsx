@@ -31,19 +31,19 @@ const AboutPage: React.FC = () => {
 
   const leadershipTeam = [
     {
-      name: "Dr. Sarah Johnson",
+      name: "Lakhel lama",
       title: "Principal",
-      bio: "Dr. Johnson has over 20 years of experience in education and is dedicated to creating an environment where students can thrive academically and personally.",
+      bio: "Lakhel Lama has over 20 years of experience in education and is dedicated to creating an environment where students can thrive academically and personally.",
       image: "https://img.heroui.chat/image/avatar?w=300&h=300&u=principal"
     },
     {
-      name: "Michael Chen",
+      name: "Nima Bomzan Yolmoo",
       title: "Vice Principal",
       bio: "With a background in curriculum development, Mr. Chen works closely with faculty to ensure our academic programs meet the highest standards.",
       image: "https://img.heroui.chat/image/avatar?w=300&h=300&u=viceprincipal"
     },
     {
-      name: "Dr. Emily Rodriguez",
+      name: "Rojan Tamang",
       title: "Dean of Students",
       bio: "Dr. Rodriguez focuses on student well-being and development, creating programs that support the whole student.",
       image: "https://img.heroui.chat/image/avatar?w=300&h=300&u=dean"
@@ -55,7 +55,7 @@ const AboutPage: React.FC = () => {
       <HeroSection
         title="About EPES"
         subtitle="Learn about our history, mission, values, and the dedicated team that makes EPES an exceptional place to learn and grow."
-        imagePath="https://img.heroui.chat/image/education?w=800&h=600&u=school2"
+        imagePath=""
       />
 
       {/* Mission & History */}
