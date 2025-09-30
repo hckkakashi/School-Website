@@ -129,7 +129,7 @@ const ContactPage: React.FC = () => {
                     <Button 
                       type="submit" 
                       color="primary"
-                      className="w-full md:w-auto"
+                      className="w-full md:w-auto ml-2"
                     >
                       Send Message
                     </Button>
