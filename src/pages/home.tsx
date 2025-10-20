@@ -17,137 +17,153 @@ const HomePage: React.FC = () => {
     {
       icon: "lucide:book",
       title: "Academic Excellence",
-      description: "Our curriculum is designed to challenge and inspire students to reach their full potential."
+      description: "Our curriculum challenges and inspires students to reach their full potential."
     },
     {
       icon: "lucide:users",
       title: "Dedicated Faculty",
-      description: "Learn from experienced educators who are passionate about student success."
+      description: "Learn from experienced educators who are passionate about your success."
     },
     {
       icon: "lucide:globe",
       title: "Global Perspective",
-      description: "Prepare for a connected world with our international programs and diverse community."
+      description: "Prepare for a connected world with our international programs."
     },
     {
       icon: "lucide:palette",
       title: "Arts & Creativity",
-      description: "Express yourself through our comprehensive arts programs and creative opportunities."
+      description: "Express yourself through our diverse arts and creative programs."
     }
   ];
 
   const stats = [
     { value: "94%", label: "Graduation Rate" },
-    { value: "30+", label: "Extracurricular Activities" },
+    { value: "30+", label: "Clubs & Activities" },
     { value: "100%", label: "College Acceptance" }
   ];
 
   return (
     <>
+      {/* HERO */}
       <HeroSection
         title="Inspiring Minds, Shaping Futures"
         subtitle="EPES offers a transformative educational experience that prepares students for success in college and beyond."
-        imagePath="src\assets\imgepes.jpg"
+        imagePath="src/assets/imgepes.jpg"
       />
 
-      {/* Features Section */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <SectionTitle 
-            title="Why Choose EPES" 
-            subtitle="We provide a supportive environment where students can discover their passions and develop the skills needed for lifelong success."
+      {/* FEATURES */}
+      <section className="py-20 bg-gradient-to-b from-white to-blue-50">
+        <div className="container mx-auto px-6">
+          <SectionTitle
+            title="Why Choose EPES"
+            subtitle="A supportive environment where students discover passions and develop lifelong skills."
             centered
           />
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-10">
             {features.map((feature, index) => (
-              <FeatureCard
-                key={index}
-                icon={feature.icon}
-                title={feature.title}
-                description={feature.description}
-                delay={index}
-              />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Stats Section */}
-      <section className="py-16 bg-content2">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
-            {stats.map((stat, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1, ease: [0.16, 1, 0.3, 1] }}
-                className="text-center"
               >
-                <p className="text-3xl md:text-4xl font-bold text-primary mb-2">{stat.value}</p>
-                <p className="text-default-600 text-sm">{stat.label}</p>
+                <FeatureCard
+                  icon={feature.icon}
+                  title={feature.title}
+                  description={feature.description}
+                  delay={index}
+                />
               </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* News & Events */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <SectionTitle 
-            title="News & Events" 
+      {/* STATS */}
+      <section className="py-16 bg-gradient-to-r from-indigo-50 via-blue-100 to-indigo-50">
+        <div className="container mx-auto px-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-8 text-center">
+            {stats.map((stat, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-2xl shadow-md p-8 hover:shadow-lg transition-all"
+              >
+                <p className="text-4xl md:text-5xl font-bold text-blue-600 mb-2">{stat.value}</p>
+                <p className="text-gray-600">{stat.label}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* NEWS & EVENTS */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-6">
+          <SectionTitle
+            title="News & Events"
             subtitle="Stay updated with the latest happenings at EPES."
           />
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-      {[1, 2, 3].map((item, index) => (
-        <Card key={item} className="border border-default-200 shadow-xs">
-          <CardBody className="p-0">
-            <img
-              src={images[index]}
-              alt={`Event ${item}`}
-              className="w-full h-48 object-cover"
-            />
-            <div className="p-5">
-              <div className="flex items-center gap-2 text-default-500 text-xs mb-2">
-                <Icon icon="lucide:calendar" width={14} />
-                <span>May {10 + item}, 2024</span>
-              </div>
-              <h3 className="text-lg font-medium mb-2">
-                {item === 1
-                  ? "Annual Sports Week"
-                  : item === 2
-                  ? "Science Exebition"
-                  : "EPES Dance Competition"}
-              </h3>
-              <p className="text-default-600 text-sm mb-4">
-                {item === 1
-                  ? "Registration is now open for our popular sports week. Programs available for all age groups and skill levels."
-                  : item === 2
-                  ? "Congratulations to all participants in this year's Science Fair. The projects showcased incredible innovation and creativity."
-                  : "Dance Competition Showcase your talent"}
-              </p>
-              <Button
-                size="sm"
-                variant="light"
-                color="primary"
-                endContent={<Icon icon="lucide:arrow-right" width={16} />}
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+            {[1, 2, 3].map((item, index) => (
+              <motion.div
+                key={item}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: index * 0.1 }}
               >
-                Read More
-              </Button>
-            </div>
-          </CardBody>
-        </Card>
-      ))}
-    </div>
-          
-          <div className="text-center mt-10">
-            <Button 
-              color="primary" 
-              variant="flat"
+                <Card className="rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all border-0 bg-gradient-to-b from-white to-gray-50">
+                  <CardBody className="p-0">
+                    <img
+                      src={images[index]}
+                      alt={`Event ${item}`}
+                      className="w-full h-52 object-cover"
+                    />
+                    <div className="p-6">
+                      <div className="flex items-center gap-2 text-gray-500 text-sm mb-2">
+                        <Icon icon="lucide:calendar" width={16} />
+                        <span>May {10 + item}, 2024</span>
+                      </div>
+                      <h3 className="text-xl font-semibold mb-3 text-gray-800">
+                        {item === 1
+                          ? "Annual Sports Week"
+                          : item === 2
+                          ? "Science Exhibition"
+                          : "EPES Dance Competition"}
+                      </h3>
+                      <p className="text-gray-600 text-sm mb-5 leading-relaxed">
+                        {item === 1
+                          ? "Join our Sports Week with activities for all age groups and skill levels."
+                          : item === 2
+                          ? "The Science Fair celebrated student innovation and creativity."
+                          : "Showcase your moves in our grand Dance Competition!"}
+                      </p>
+                      <Button
+                        size="sm"
+                        variant="flat"
+                        color="primary"
+                        endContent={<Icon icon="lucide:arrow-right" width={16} />}
+                      >
+                        Read More
+                      </Button>
+                    </div>
+                  </CardBody>
+                </Card>
+              </motion.div>
+            ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <Button
+              color="primary"
+              variant="shadow"
+              size="md"
               endContent={<Icon icon="lucide:arrow-right" width={16} />}
             >
               View All News & Events
@@ -156,80 +172,96 @@ const HomePage: React.FC = () => {
         </div>
       </section>
 
-      <section className="bg-blue-50 py-16">
-  <div className="max-w-7xl mx-auto px-6 lg:px-8">
-    <h2 className="text-4xl font-bold text-center text-black mb-12">What Our Students & Parents Say</h2>
-    <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-      
-      {/* <!-- Testimonial 1 --> */}
-      <div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-        <div className="flex items-center mb-4">
-          <img className="w-12 h-12 rounded-full mr-4" src="https://i.pravatar.cc/100?img=4" alt="Student 1"/>
-          <div>
-            <p className="font-semibold text-black">Anjali Sharma</p>
-            <p className="text-black-600 text-sm">Grade 10 Student</p>
-          </div>
-        </div>
-        <p className="text-black-800">"I love how interactive and fun the classNamees are! Teachers always make learning exciting and easy to understand."</p>
-      </div>
-      
-      {/* <!-- Testimonial 2 --> */}
-      <div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-        <div className="flex items-center mb-4">
-          <img className="w-12 h-12 rounded-full mr-4" src="https://i.pravatar.cc/100?img=5" alt="Parent 1"/>
-          <div>
-            <p className="font-semibold text-black">Ramesh Koirala</p>
-            <p className="text-black-600 text-sm">Parent</p>
-          </div>
-        </div>
-        <p className="text-black-800">"The school provides excellent guidance and support for my child. The teachers are caring and attentive."</p>
-      </div>
-      
-      {/* <!-- Testimonial 3 --> */}
-      <div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-        <div className="flex items-center mb-4">
-          <img className="w-12 h-12 rounded-full mr-4" src="https://i.pravatar.cc/100?img=6" alt="Student 2"/>
-          <div>
-            <p className="font-semibold text-black">Sita Gurung</p>
-            <p className="text-black-600 text-sm">Grade 8 Student</p>
-          </div>
-        </div>
-        <p className="text-black-800">"I enjoy participating in school activities and competitions. The environment is so friendly and motivating!"</p>
-      </div>
-      
-    </div>
-  </div>
-</section>
-
-
-      {/* CTA Section */}
-      <section className="py-16 bg-primary-0">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-semibold mb-4">Ready to Join Our Community?</h2>
-            <p className="text-default-600 mb-8">
-              Take the first step toward an exceptional educational experience. Apply now or schedule a campus tour to learn more.
-            </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <Button 
-                as={Link}
-                to="/admissions"
-                color="primary" 
-                size="lg"
+      {/* TESTIMONIALS */}
+      <section className="bg-gradient-to-b from-blue-50 to-white py-20">
+        <div className="container mx-auto px-6">
+          <h2 className="text-4xl font-bold text-center text-gray-800 mb-14">
+            What Our Students & Parents Say
+          </h2>
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {[
+              {
+                name: "Anjali Sharma",
+                role: "Grade 10 Student",
+                img: "https://i.pravatar.cc/100?img=4",
+                text: "I love how interactive and fun the classes are! Teachers make learning exciting."
+              },
+              {
+                name: "Ramesh Koirala",
+                role: "Parent",
+                img: "https://i.pravatar.cc/100?img=5",
+                text: "The school provides excellent guidance and support. Teachers are truly caring."
+              },
+              {
+                name: "Sita Gurung",
+                role: "Grade 8 Student",
+                img: "https://i.pravatar.cc/100?img=6",
+                text: "The environment here is so friendly and motivating. I love participating in events!"
+              }
+            ].map((testimonial, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="bg-white p-8 rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300"
               >
-                Apply Now
-              </Button>
-              <Button 
-                as={Link}
-                to="/contact"
-                variant="flat" 
-                color="primary" 
-                size="lg"
-              >
-                Schedule a Tour
-              </Button>
-            </div>
+                <div className="flex items-center mb-4">
+                  <img className="w-12 h-12 rounded-full mr-4" src={testimonial.img} alt={testimonial.name} />
+                  <div>
+                    <p className="font-semibold text-gray-800">{testimonial.name}</p>
+                    <p className="text-gray-500 text-sm">{testimonial.role}</p>
+                  </div>
+                </div>
+                <p className="text-gray-700 leading-relaxed">“{testimonial.text}”</p>
+              </motion.div>
+            ))}
           </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-20 bg-gradient-to-r from-indigo-600 to-blue-500 text-white text-center">
+        <div className="container mx-auto px-6">
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+            className="text-3xl md:text-4xl font-semibold mb-6"
+          >
+            Ready to Join Our School?
+          </motion.h2>
+          <p className="text-blue-100 max-w-2xl mx-auto mb-10">
+            Take the first step toward an exceptional educational experience. Apply now or schedule a school tour to learn more.
+          </p>
+          <div className="flex flex-wrap justify-center gap-5">
+  {/* Apply Now Button - white bg, blue text */}
+  <Button
+    as={Link}
+    to="/admissions"
+    size="lg"
+    className="bg-white text-blue-600 font-semibold px-6 py-3 rounded-xl 
+               hover:bg-blue-600 hover:text-white transition-all duration-300 
+               shadow-md hover:shadow-lg"
+  >
+    Apply Now
+  </Button>
+
+  {/* Schedule a Tour Button - blue bg, white text */}
+  <Button
+    as={Link}
+    to="/contact"
+    size="lg"
+    className="bg-blue-600 text-white font-semibold px-6 py-3 rounded-xl 
+               hover:bg-white hover:text-blue-600 transition-all duration-300 
+               shadow-md hover:shadow-lg"
+  >
+    Schedule a Tour
+  </Button>
+</div>
+
         </div>
       </section>
     </>
